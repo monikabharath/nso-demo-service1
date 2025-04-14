@@ -38,16 +38,14 @@ pipeline {
                 sh 'pytest tests/'
             }
         }
+    }
 
-        stage('Deploy to NSO') {
-            steps {
-                sh '''
-                    curl -u $NSO_USER:$NSO_PASS \
-                         -X POST http://$NSO_HOST:$NSO_PORT/api/running/services/my-service \
-                         -H "Content-Type: application/vnd.yang.data+json" \
-                         -d @sample-payload.json
-                '''
-            }
+    post {
+        success {
+            echo '✅ Successfully logged in to NSO and pipeline completed!'
+        }
+        failure {
+            echo '❌ Pipeline failed. Please check the logs.'
         }
     }
 }
