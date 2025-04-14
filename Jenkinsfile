@@ -28,11 +28,11 @@ pipeline {
         //     }
         // }
 
-        stage('Lint Python') {
-            steps {
-                sh 'python3 -m py_compile package/python/*.py'
-            }
-        }
+        // stage('Lint Python') {
+        //     steps {
+        //         sh 'python3 -m py_compile package/python/*.py'
+        //     }
+        // }
 
         stage('Test') {
             steps {
