@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                ggit branch: 'main', url: 'https://github.com/monikabharath/nso-demo-service1.git'
+                git branch: 'main', url: 'https://github.com/monikabharath/nso-demo-service1.git'
             }
         }
 
