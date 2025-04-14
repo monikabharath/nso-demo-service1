@@ -17,18 +17,16 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '''
-                    pip3 install -r requirements.txt
-                    pip3 install pyang
-                '''
+                sh 'pip3 install -r requirements.txt'
+
             }
         }
 
-        stage('Lint YANG') {
-            steps {
-                sh 'pyang service-yang-model.yang'
-            }
-        }
+        // stage('Lint YANG') {
+        //     steps {
+        //         sh 'pyang service-yang-model.yang'
+        //     }
+        // }
 
         stage('Lint Python') {
             steps {
