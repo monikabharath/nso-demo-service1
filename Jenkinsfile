@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         NSO_HOST = "localhost"
-        NSO_PORT = "8080"
+        NSO_PORT = "8081"
         NSO_USER = "admin"
         NSO_PASS = "admin"
     }
