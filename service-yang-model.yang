@@ -1,5 +1,5 @@
 module my-service {
-  namespace "http://example.com/my-service";
+  namespace "/Users/movijayk/Documents/nso-631-run";
   prefix my;
 
   yang-version 1.1;
