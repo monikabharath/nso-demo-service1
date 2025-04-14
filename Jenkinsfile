@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/https://github.com/monikabharath/nso-demo-service1.git/'
+                git 'https://github.com/monikabharath/nso-demo-service1.git/'
             }
         }
 
