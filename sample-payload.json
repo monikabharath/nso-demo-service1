@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "my-service:service": {
       "instance": [
         {
@@ -10,3 +11,10 @@
     }
   }
   
+=======
+  "my-service:service": {
+    "name": "demo-service",
+    "enable": true
+  }
+}
+>>>>>>> 50fb97e (new commit)

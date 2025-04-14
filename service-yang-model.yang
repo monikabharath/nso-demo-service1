@@ -1,4 +1,5 @@
 module my-service {
+<<<<<<< HEAD
   namespace "/Users/movijayk/Documents/nso-631-run";
   prefix my;
 
@@ -30,6 +31,18 @@ module my-service {
         type string;
         description "Optional description";
       }
+=======
+  namespace "http://example.com/my-service";
+  prefix my;
+
+  container service {
+    leaf name {
+      type string;
+    }
+    leaf enable {
+      type boolean;
+      default "true";
+>>>>>>> 50fb97e (new commit)
     }
   }
 }
