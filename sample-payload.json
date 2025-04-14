@@ -1,0 +1,12 @@
+{
+    "my-service:service": {
+      "instance": [
+        {
+          "name": "demo1",
+          "enable": true,
+          "description": "Created by GitHub Actions"
+        }
+      ]
+    }
+  }
+  

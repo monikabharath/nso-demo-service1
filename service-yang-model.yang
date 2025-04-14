@@ -1,0 +1,35 @@
+module my-service {
+  namespace "http://example.com/my-service";
+  prefix my;
+
+  yang-version 1.1;
+
+  import tailf-common {
+    prefix tailf;
+  }
+
+  organization "Your Org";
+  contact "you@example.com";
+  description "A simple test service.";
+
+  revision 2024-01-01 {
+    description "Initial revision.";
+  }
+
+  container service {
+    list instance {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf enable {
+        type boolean;
+        default "true";
+      }
+      leaf description {
+        type string;
+        description "Optional description";
+      }
+    }
+  }
+}
